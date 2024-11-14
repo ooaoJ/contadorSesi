@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Otimizada - Página 2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="root">
+        <aside>
+            <div class="aside-top">
+                <img src="imgs/logo.png" alt="Logo">
+                <h1>Bem vindo</h1>
+            </div>
+            <span class="linha"></span>
+            <div class="aside-navbar">
+                <div class="icones activeIcon hoverIcon" onclick="openHome()">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </div>
+                <div class="icones hoverIcon" onclick="openContagem()">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>Contagem</p>
+                </div>
+                <div class="icones hoverIcon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Nível de Ensino</p>
+                </div>
+                <div class="dropdown">
+                    <span class="linhadropdown"></span>
+                    <div class="dropdownIcon hoverIcon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p class="dropdownIconTxt">Fundamental I</p>
+                    </div>
+                    <div class="dropdownIcon hoverIcon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p class="dropdownIconTxt">Fundamental II</p>
+                    </div>
+                    <div class="dropdownIcon hoverIcon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p class="dropdownIconTxt">Ensino Médio</p>
+                    </div>
+                    <div class="dropdownIcon hoverIcon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p class="dropdownIconTxt">Outros</p>
+                    </div>
+                </div>
+            </div>
+            <span class="linha"></span>
+            <div class="aside-infos">
+                <div class="hoverIcon">
+                    <i class="fa-regular fa-user"></i>
+                    <p id="nomeUsuario">{usuario}</p>
+                </div>
+                <div class="hoverIcon">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Configurações</p>
+                </div>
+            </div>
+        </aside>
+        <section id="home" style="display: flex;">
+            <header>
+                <h1>Realize a contagem agora</h1>
+                <span class="linhaTitle"></span>
+            </header>
+            <main>
+                <div class="mainTop">
+                    <p>Data: <span id="date"></span></p>
+                    <img src="imgs/sesi-logo.png" alt="Sesi Logo" id="logoSesi">
+                </div>
+                <div class="mainContent">
+                    <p>Seja bem-vindo ao Contador de Alunos do SESI, uma ferramenta digital desenvolvida para monitorar, em tempo real, o número de alunos. Este sistema foi criado com o objetivo de oferecer uma visão clara e acessível sobre a quantidade de estudantes no dia, proporcionando praticidade e facilidade de acompanhamento tanto para a administração quanto para os membros da equipe da cozinha.</p>
+                </div>
+            </main>
+            <footer>
+                <div class="info">
+                    <div class="infoCard">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>SESI - Regente Feijó</p>
+                    </div>
+                    <div class="infoCard">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contato: codingthefuture.cf@gmail.com</p>
+                    </div>
+
+                </div>
+            </footer>
+        </section>
+        <section id="contagem" style="display: none;">
+            <header>
+                <h1>Contagens</h1>
+            </header>
+            <main>
+                <div class="mainContent">
+                    <div class="card">
+                        <div>
+                            <p>Contagem</p>
+                        </div>
+                        <div class="cardContador">
+                            <p id="contadorFund">38</p>
+                        </div>
+                        <span class="linhaCard"></span>
+                        <div class="cardTags">
+                            <div class="tag">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>Fundamental I</p>
+                            </div>
+                            <div class="tag">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>Fundamental II</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <p>Contagem</p>
+                        </div>
+                        <div class="cardContador">
+                            <p id="contadorFund">45</p>
+                        </div>
+                        <span class="linhaCard"></span>
+                        <div class="cardTags">
+                            <div class="tag">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>Ensino Médio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <p>Contagem</p>
+                        </div>
+                        <div class="cardContador">
+                            <p id="contadorFund">31</p>
+                        </div>
+                        <span class="linhaCard"></span>
+                        <div class="cardTags">
+                            <div class="tag">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>Outros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="js/date.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
